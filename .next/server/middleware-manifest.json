@@ -1,0 +1,27 @@
+{
+  "version": 3,
+  "middleware": {},
+  "functions": {
+    "/api/scrape": {
+      "files": [
+        "server/edge-runtime-webpack.js",
+        "server/pages/api/scrape.js"
+      ],
+      "name": "pages/api/scrape",
+      "page": "/api/scrape",
+      "matchers": [
+        {
+          "regexp": "^/api/scrape$",
+          "originalSource": "/api/scrape"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "development",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "U90oct/ml3jJps6ZNPEMNPjt0qjTJPig5Tu+RJ6323U="
+      }
+    }
+  },
+  "sortedMiddleware": []
+}
